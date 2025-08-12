@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandra's Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #0056b3;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #007BFF;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .project {
+      border-left: 4px solid #007BFF;
+      padding-left: 15px;
+      margin-bottom: 20px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Sandra's Portfolio 💙</h1>
+    <p>A future software developer with a clinical medicine heart!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#programming-languages">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#interests">Interests</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sandra, a passionate and curious learner currently training in software development with Power Learn Project. I come from a clinical medicine background, and I’m excited to combine healthcare knowledge with tech to solve real-world problems. I’m driven by purpose, creativity, and the desire to make a meaningful impact.</p>
+    <p>I'm enthusiastic about web development, design, and exploring how technology can improve lives. Outside of code, I love food (especially bhajia and chips 🍟), cats, journaling, and learning new things every day.</p>
+    <p>I believe in hard work, faith, and continuous growth. Let’s build something amazing together!</p>
+  </section>
+
+  <section id="programming-languages">
+    <h2>Programming Languages</h2>
+    <ul>
+      <li><strong>HTML:</strong> My foundation for creating structured, semantic web pages.</li>
+      <li><strong>CSS:</strong> I love bringing websites to life with styling and creativity!</li>
+      <li><strong>JavaScript:</strong> Exploring the magic of making websites interactive.</li>
+      <li><strong>Python:</strong> My favorite for problem-solving and logic.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Educational Background</h2>
+    <ul>
+      <li><strong>Diploma in Clinical Medicine and Surgery</strong><br>
+        KMTC – Kenya Medical Training College<br>
+        2020 – Present (Final Year)
+      </li>
+      <li><strong>Software Development Training</strong><br>
+        Power Learn Project – July 2025 Cohort<br>
+        16-week intensive training program
+      </li>
+    </ul>
+    <p>You can download my CV here: 
+      <a href="assets/Sandra_CV.pdf" download>Download CV</a>
+    </p>
+  </section>
+
+  <section id="interests">
+    <h2>Interests</h2>
+    <p>I'm deeply fascinated by the power of technology to solve real-world problems — especially in healthcare, mental wellness, and education. I’m interested in building web applications that are accessible, user-friendly, and impactful.</p>
+    <p>I'm especially drawn to:</p>
+    <ul>
+      <li>Front-End Web Development (HTML, CSS, JavaScript)</li>
+      <li>Mobile App Development</li>
+      <li>Using tech for health awareness and outreach</li>
+      <li>Exploring UI/UX design to create smooth, beautiful user experiences</li>
+    </ul>
+    <p>Outside of tech, I love food (especially bhajia and chips 🍟), journaling, cats 🐱, music, and peaceful nature walks. I believe in balance — working hard, living fully, and growing intentionally.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>Personal Portfolio Website</h3>
+      <p>This very website! Built using HTML and CSS to showcase my background, skills, and growth as a developer.</p>
+      <a href="#">View Project</a>
+    </div>
+
+    <div class="project">
+      <h3>Basic Calculator</h3>
+      <p>A simple Python program that performs basic arithmetic operations like addition, subtraction, multiplication, and division.</p>
+      <a href="#">GitHub Link</a>
+    </div>
+
+    <div class="project">
+      <h3>Login Form Page</h3>
+      <p>A responsive login form built with HTML and CSS. Practiced layout design and form structure.</p>
+      <a href="#">View Demo</a>
+    </div>
+
+    <p>More projects coming soon as I continue building and learning every day!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out if you want to collaborate, connect, or just say hi 😊</p>
+
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="_replyto" required><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sandra. Built with 💙 by me!</p>
+  </footer>
+</body>
+</html>
